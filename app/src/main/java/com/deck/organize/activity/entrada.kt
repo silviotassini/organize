@@ -41,7 +41,6 @@ class entrada : AppCompatActivity() {
             val editor = sharedPreferences.edit()
             editor.putString("userId", userId)
             editor.apply()
-            Log.i("UID USUARIO", "verificaUserLogado: $userId")
             startActivity(Intent(this, PrincipalActivity::class.java))
         }
     }

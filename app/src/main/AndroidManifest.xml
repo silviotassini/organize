@@ -14,17 +14,17 @@
         tools:targetApi="31">
         <activity
             android:name=".activity.ReceitaActivity"
-            android:theme="@style/receitaTheme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/receitaTheme" />
         <activity
             android:name=".activity.DespesaActivity"
-            android:theme="@style/despesaTheme"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/despesaTheme" />
         <activity
             android:name=".activity.PrincipalActivity"
             android:exported="false"
             android:label="@string/title_activity_principal"
-            android:theme="@style/Theme.Organize" />
+            android:theme="@style/Theme.Organize.NoActionBar" />
         <activity
             android:name=".activity.LoginActivity"
             android:exported="false"

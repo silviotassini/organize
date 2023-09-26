@@ -16,3 +16,4 @@ fun retornaData(): String? {
     var dataAtual = sdf.format(data)
     return dataAtual
 }
+

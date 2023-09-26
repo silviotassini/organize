@@ -25,8 +25,10 @@ class DespesaActivity : AppCompatActivity() {
         binding.editData.setText( retornaData() )
 
         binding.fab.setOnClickListener {
-            salvaMovimentacao()
-            clearAllCampos()
+            if(validarCampos() == true) {
+                salvaMovimentacao()
+                clearAllCampos()
+            }
         }
     }
     fun clearAllCampos(){
@@ -50,7 +52,7 @@ class DespesaActivity : AppCompatActivity() {
 
     }
 
-    fun validarCamposDespesa(): Boolean? {
+    fun validarCampos(): Boolean? {
         var campoValor = binding.editValor.text.toString()
         var campoData = binding.editData.text.toString()
         var campoCateg = binding.editCategoria.text.toString()

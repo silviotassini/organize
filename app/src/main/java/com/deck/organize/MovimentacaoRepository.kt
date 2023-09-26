@@ -9,6 +9,16 @@ class MovimentacaoRepository(private val movimentacao: Movimentacao) {
     fun salvar() {
         dbref.child("Movimentacao").push().setValue(movimentacao)
     }
+
+    fun resumo(userId: String) {
+
+    }
+
+    fun lista(userId: String) {
+        dbref.child("Movimentacao")
+    }
+
+
 }
 
 
