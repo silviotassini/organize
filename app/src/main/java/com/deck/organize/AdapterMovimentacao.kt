@@ -1,5 +1,6 @@
 package com.deck.organize
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +25,7 @@ class AdapterMovimentacao : RecyclerView.Adapter<MovimentacaoViewHolder>() {
     }
 
     override fun getItemCount(): Int {
+        Log.i("MEULOG1", "${lista.count().toString()}")
         return lista.count()
     }
 

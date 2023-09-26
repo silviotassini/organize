@@ -1,6 +1,7 @@
 package com.deck.organize.model
 
 class Movimentacao {
+    var id:String=""
     var idUsuario: String=""
     var tipo:String=""
     var data:String =""
